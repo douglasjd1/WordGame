@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+@import helper._
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a Story!!</title>
+</head>
+<body>
+<p>
+    Enter some words to make a story
+</p>
+    <form method="post">
+        @CSRF.formField
+        Place: <input type="text" name="place"> <br>
+        Adjective: <input type="text" name="adjective"><br>
+        Noun: <input type="text" name="noun1"><br>
+        Another noun: <input type="text" name="noun2"><br>
+        <input type="submit" value="create">
+    </form>
+
+</body>
+</html>
